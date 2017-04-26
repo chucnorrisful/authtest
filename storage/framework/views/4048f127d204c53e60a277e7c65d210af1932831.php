@@ -8,6 +8,7 @@
                     <form class="form-horizontal" role="form" method="POST" action="<?php echo e(route('login')); ?>">
                         <?php echo e(csrf_field()); ?>
 
+                        <?php echo e(print route('password.request')."<br>"); ?>
 
                         <div class="form-group<?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
